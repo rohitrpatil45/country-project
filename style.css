@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
+
+.main-container{
+   
+}
 main {
+  
     width: 100vw;
     /* padding-top: 20px; */
 
@@ -25,11 +30,13 @@ header {
     border-radius: 5px;
     margin: 0 auto;
     max-width: 1280px;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: #00000063;
+    background: #00000083;
+    
 }
 
 header button {
@@ -49,8 +56,10 @@ header h2 {
 .second-main{
     margin-top: 10px;
     position: relative;
+   
 }
 .second-main{
+  
     background: #00000063;
     /* background: red; */
     display: flex;
@@ -92,7 +101,7 @@ header h2 {
 }
 
 .hero-div{
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 10px;
     max-width: 1280px;
     margin: 0 auto;

@@ -12,9 +12,9 @@ import Formvalidation from "./components/Formvalidation";
 function Main() {
   return (
     <>
-      <main>
+      <main className="main-container">
         <MainHeader />
-        <SecondElement />
+        {/* <SecondElement /> */}
         <Herosection />
       </main>
     </>
