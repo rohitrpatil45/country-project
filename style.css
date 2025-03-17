@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+
+}
+
+.head-container{
+    height: 68px;
+    padding: 10px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-items: center; */
+    /* margin: 2px; */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.544);
+}
+
+header {
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #00000063;
+}
+
+header button {
+    height: 32px;
+}
+
+header h2 {
+    color: whitesmoke;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+
+    
+}
+
+.second-main{
+    margin-top: 10px;
+    position: relative;
+}
+.second-main{
+    background: #00000063;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 48px;
+}
+
+.input-tag{
+    padding: 5px;
+    height: 100%;
+    width: 50%;
+}
+
+.filter-btn{
+    height: 36px;
+    margin: 5px;
+    width: 150px;
+}
+
+.filter-menu ul {
+  position: absolute;
+  background: red;
+  width: 160px;
+ height: 130px;
+
+  /* /* text-decoration: none; */
+  list-style: none; 
+}
+
+.filter-menu ul li{
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
