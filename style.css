@@ -123,6 +123,7 @@ header h2 {
 .hero-div .container img{
     width: 100%;
     height: auto;
+    max-height: 160px;
     /* max-width: 200px; */
 }
 

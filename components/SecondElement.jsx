@@ -52,7 +52,7 @@
 
 import React, { useState } from "react";
 
-function SecondElement({ selected, setSelected }) { // Receiving props from Herosection
+function SecondElement({ selected, setSelected, setSearchTerm }) { 
   const [menu, setMenu] = useState(false);
 
   const useClick = () => {
@@ -60,7 +60,7 @@ function SecondElement({ selected, setSelected }) { // Receiving props from Hero
   };
 
   const selectedOption = (option) => {
-    setSelected(option); // Updating the parent state
+    setSelected(option); 
     console.log("Selected option is", option);
     setMenu(false);
   };
@@ -69,10 +69,12 @@ function SecondElement({ selected, setSelected }) { // Receiving props from Hero
     <>
       <div className="second-main">
         <div className="input-tag">
+          {/* Update the search term whenever user types */}
           <input
             className="input-tag"
             type="text"
             placeholder="Search for the Country"
+            onChange={(e) => setSearchTerm(e.target.value)} // <- This is important
           />
         </div>
         
@@ -81,7 +83,7 @@ function SecondElement({ selected, setSelected }) { // Receiving props from Hero
           {menu && (
             <div className="filter-menu">
               <ul>
-                {["Asia", "Africa", "Americas", "Europe"].map((item) => ( // Using "Americas" instead of "America"
+                {["Asia", "Africa", "Americas", "Europe"].map((item) => (
                   <li key={item} onClick={() => selectedOption(item)}>{item}</li>
                 ))}
               </ul>
@@ -94,3 +96,4 @@ function SecondElement({ selected, setSelected }) { // Receiving props from Hero
 }
 
 export default SecondElement;
+

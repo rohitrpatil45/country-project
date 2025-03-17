@@ -28,22 +28,23 @@
 // export default Herosection;
 
 
-
-
 import React, { useState } from "react";
 import data from "../data.json";
 import SecondElement from "./SecondElement";
 
 function Herosection() {
-  const [selected, setSelected] = useState(''); // State for selected region
+  const [selected, setSelected] = useState(''); // For region filter
+  const [searchTerm, setSearchTerm] = useState(''); // For search input
 
-  // Filter the data based on the selected region
-  const filteredData = selected ? data.filter(item => item.region === selected) : data;
+  // Filter the data based on region and search term
+  const filteredData = data.filter(item =>
+    (selected ? item.region === selected : true) && // Region filter
+    (searchTerm ? item.name.toLowerCase().includes(searchTerm.toLowerCase()) : true) // Search filter
+  );
 
   return (
     <>
-      {/* Passing `selected` and `setSelected` as props */}
-      <SecondElement selected={selected} setSelected={setSelected} /> 
+      <SecondElement selected={selected} setSelected={setSelected} setSearchTerm={setSearchTerm} /> 
       
       <div className="hero-div">
         {filteredData.map((item, index) => (
@@ -62,3 +63,5 @@ function Herosection() {
 }
 
 export default Herosection;
+
+
