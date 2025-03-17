@@ -6,7 +6,7 @@ function SecondElement() {
 
   const useclick = () => {
     setmenu(!menu);
-    console.log("first")
+    console.log("click on the menu btn")
   };
 const selectedOption = (options) =>{
   setselected(options);

@@ -86,4 +86,34 @@ header h2 {
   padding: 5px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
+  border: 2px solid black;
+}
+
+.hero-div{
+    padding: 10px;
+    max-width: 1280px;
+    margin: 0 auto;
+    border: 5px solid orangered;
+    display: grid;
+    background: #00000063;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    /* background: red; */
+}
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    /* max-width: 250px; */
+    background: #00000088;
+}
+
+.hero-div .container img{
+    width: 100%;
+    height: auto;
+    /* max-width: 200px; */
+}
+
+.div-data p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
 }
