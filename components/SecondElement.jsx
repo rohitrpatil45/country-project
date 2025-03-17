@@ -2,11 +2,17 @@ import React, { useState } from "react";
 
 function SecondElement() {
   const [menu, setmenu] = useState(false);
+  const [seleted , setselected] =useState('');
 
   const useclick = () => {
     setmenu(!menu);
-    console.log("first")
+    console.log("click on the menu btn")
   };
+const selectedOption = (options) =>{
+  setselected(options);
+  console.log("selected options is " , options)
+  setmenu(false)
+}
   return (
     <>
       <div className="second-main">
@@ -20,12 +26,13 @@ function SecondElement() {
 
         <div className="filter-element">
           <button onClick={useclick}className="filter-btn" >Fliter by Region</button>
-{menu &&  <div className="filter-menu">
+  {menu &&  <div className="filter-menu">
             <ul>
-              <li>rohit</li>
-              <li>rohan</li>
-              <li>raj</li>
-              <li>kaushik</li>
+
+              {["Asia" ,"Africa" , "America" , "Europe"].map( (item) =>(
+                <li key={item} onClick={ () => selectedOption(item)}>{item}</li>
+              ))}
+             
             </ul>
           </div>}
          
