@@ -71,7 +71,7 @@ function SecondElement({ selected, setSelected, setSearchTerm }) {
         <div className="input-tag">
           {/* Update the search term whenever user types */}
           <input
-            className="input-tag"
+            className="input-tag input"
             type="text"
             placeholder="Search for the Country"
             onChange={(e) => setSearchTerm(e.target.value)} // <- This is important

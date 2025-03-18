@@ -140,3 +140,12 @@ header h2 {
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .input{
+        color: red;
+        max-width: 30dvh;
+        min-width: 20dvh;
+
+    }
+}
