@@ -9,7 +9,7 @@
    
 }
 main {
-  
+  background: #FAF1E6;
     width: 100vw;
     /* padding-top: 20px; */
 
@@ -23,7 +23,7 @@ main {
     /* align-items: center; */
     /* margin: 2px; */
     width: 100%;
-    background: rgba(0, 0, 0, 0.544);
+    background: #FAF1E6;
 }
 
 header {
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: #00000083;
+    background: #E4EFE7;
     
 }
 
@@ -44,7 +44,7 @@ header button {
 }
 
 header h2 {
-    color: whitesmoke;
+    color:#EC5228;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -60,7 +60,8 @@ header h2 {
 }
 .second-main{
   
-    background: #00000063;
+    background: #FAF1E6;
+    
     /* background: red; */
     display: flex;
     justify-content: space-between;
@@ -84,8 +85,8 @@ header h2 {
 
 .filter-menu ul {
   position: absolute;
-  background: grey;
-  color: lightgreen;
+  background: #F2E2B1;
+  color: #EC5228;
   width: 160px;
  height: 130px;
 
@@ -97,7 +98,7 @@ header h2 {
   padding: 5px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
-  border: 2px solid black;
+  border: 2px solid #EEEEEE;
 }
 
 .hero-div{
@@ -105,19 +106,25 @@ header h2 {
     padding: 10px;
     max-width: 1280px;
     margin: 0 auto;
-    border: 5px solid rgba(0, 0, 0, 0.753);
-    display: grid;
-    background: #00000063;
+    border: 3px solid #F2E2B1;
+    /* display: grid; */
+    background: #FAF1E6;
     border-radius: 10px;
-    gap: 10px;
-    justify-content: center;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+      --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+    /* gap: 10px; */
+    /* justify-content: center; */
+    /* grid-template-columns:1fr 1fr 1fr 1fr; */
     /* background: red; */
 }
 .container{
-    border: 2px solid rgb(0, 0, 0);
+    border: 5px solid #D5E5D5;
+    border-radius: 10px;
+    overflow: hidden;
     /* max-width: 250px; */
-    background: #00000088;
+    background: #EFEFEF;
 }
 
 .hero-div .container img{
@@ -131,3 +138,5 @@ header h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px;
 }
+
+
