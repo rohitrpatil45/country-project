@@ -52,7 +52,7 @@ function Herosection() {
             <img src={item.flag} alt="country-image" />
             <div className="div-data">
               <p>Name: {item.name}</p>
-              <p>Population: {item.population}</p>
+              <p>Population: {item.population.toLocaleString()}</p>
               <p>Region: {item.region}</p>
             </div>
           </div>
