@@ -10,7 +10,7 @@ function Main() {
     <>
       <main className="main-conat">
         <MainHeader />
-        {/* <SecondElement /> */}
+ 
         <Herosection />
       </main>
     </>
