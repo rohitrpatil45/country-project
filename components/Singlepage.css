@@ -1,0 +1,45 @@
+.main-container-singleCountry {
+    padding: 10px;
+  margin: 0 auto;
+  max-width: 1280px;
+  background: greenyellow;
+  /* height: 100dvh; */
+  min-height: 90vh;
+    /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  
+}
+
+.Page-container {
+    display: flex;
+    justify-content: space-between; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 60vh; /* Takes full viewport height */
+    margin: 0;
+    overflow: hidden;
+    background: red;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.image-container img {
+  max-width: 450px;
+}
+
+.country-details {
+  min-width: 560px;
+  background: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details p {
+  padding: 12px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+}
