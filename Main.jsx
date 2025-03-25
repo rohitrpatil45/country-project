@@ -4,15 +4,22 @@ import React from "react";
 import MainHeader from "./components/MainHeader";
 import SecondElement from "./components/SecondElement";
 import Herosection from "./components/Herosection";
+import SingleCountry from "./components/SingleCountry";
+
 
 function Main() {
   return (
     <>
-      <main className="main-conat">
+    <SingleCountry />
+      {/* <main className="main-conat">
         <MainHeader />
+<<<<<<< HEAD
  
+=======
+      
+>>>>>>> jijau-pc
         <Herosection />
-      </main>
+      </main> */}
     </>
   );
 }
