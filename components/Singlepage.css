@@ -12,6 +12,18 @@
   
 }
 
+
+.back-btn{
+    color: #EC5228;
+    background: #FAF1E6;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
 .Page-container {
     display: flex;
     justify-content: space-between; /* Centers horizontally */

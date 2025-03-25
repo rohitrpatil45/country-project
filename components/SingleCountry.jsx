@@ -8,6 +8,7 @@ function SingleCountry() {
     <>
   
       <div className="main-container-singleCountry">
+        <button className="back-btn">Back to Home</button>
         <div className="Page-container">
           <div className="image-container">
             <img
