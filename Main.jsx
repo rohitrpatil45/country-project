@@ -13,8 +13,7 @@ function Main() {
     <SingleCountry />
       {/* <main className="main-conat">
         <MainHeader />
-<<<<<<< HEAD
- 
+<<<<<<< HEADd
 =======
       
 >>>>>>> jijau-pc
