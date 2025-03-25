@@ -10,15 +10,8 @@ import SingleCountry from "./components/SingleCountry";
 function Main() {
   return (
     <>
-    <SingleCountry />
-      {/* <main className="main-conat">
-        <MainHeader />
-<<<<<<< HEADd
-=======
+    <Herosection/>
       
->>>>>>> jijau-pc
-        <Herosection />
-      </main> */}
     </>
   );
 }

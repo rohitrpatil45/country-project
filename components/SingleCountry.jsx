@@ -6,7 +6,7 @@ import "./Singlepage.css";
 function SingleCountry() {
   return (
     <>
-      <MainHeader />
+  
       <div className="main-container-singleCountry">
         <div className="Page-container">
           <div className="image-container">
